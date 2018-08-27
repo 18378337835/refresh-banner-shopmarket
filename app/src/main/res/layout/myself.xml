@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.school_design.view.my_scroll.PullToRefresh0
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f7f7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/refresh_head"
+
+        />
+
+    <com.example.administrator.school_design.view.my_scroll.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+   >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/view_user"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/head_1">
+
+                <com.example.administrator.school_design.diy_item.CircleImg
+                    android:id="@+id/head"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:background="@drawable/head"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                       >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:textSize="18.0dip"
+                                android:id="@+id/tvname"
+                                 android:text="请输入"
+                                android:paddingRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_toRightOf="@+id/head"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <ImageView
+                                android:id="@+id/iv_sex"
+                                android:layout_toRightOf="@+id/tvname"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/ic_sex_male" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:textSize="14.0dip"
+                                style="@style/txt_ContextStyle1"
+                                android:paddingTop="10dp"
+                                android:text="工作号："
+                                />
+                            <TextView
+                                android:id="@+id/tv_work"
+                                android:textSize="14.0dip"
+                                style="@style/txt_ContextStyle1"
+                                android:paddingTop="10dp"
+                                 android:text="暂无"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right"
+                        android:layout_weight="0.1"
+                        android:layout_marginTop="25dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <View
+                android:background="#ffeeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+
+
+
+
+            <View
+                android:background="#ffeeeeee"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/sign"
+                    android:background="@drawable/history_frame_1"
+                    >
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/data"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+
+                        android:text="签到"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+              android:padding="5dp"
+                        android:gravity="right"
+                        android:id="@+id/oksign"
+                        android:text="未签到"
+                        android:textSize="16sp"
+                        android:textColor="#616361"
+                        android:background="@drawable/rigister_back"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/history_frame_1"
+                    android:visibility="gone"
+                    >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/data"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+
+                        android:text="签到"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+
+                        />
+
+                    />
+                </LinearLayout>
+                <View
+                    android:background="#ffeeeeee"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_height="1.0dip" />
+
+
+            </LinearLayout>
+            <View
+                android:background="#ffeeeeee"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dip" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/address"
+                android:background="@drawable/history_frame_1"
+                >
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/wuliu"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:text="我的订单"
+                    android:layout_weight="0.01"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                />
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:background="#ffeeeeee"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/password_setting"
+                    android:background="@drawable/history_frame_1"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/icon_me_setting"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:text="更改账号密码"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+                    />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="#ffeeeeee"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/exit_number"
+                    android:background="@drawable/history_frame_1"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bac"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:text="退出当前账号"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+                    />
+
+                </LinearLayout>
+                <TextView
+                    android:background="#ffeeeeee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.example.administrator.school_design.view.my_scroll.PullableScrollView>
+    <include layout="@layout/load_more" />
+</com.example.administrator.school_design.view.my_scroll.PullToRefresh0>

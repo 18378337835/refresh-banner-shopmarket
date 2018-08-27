@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0f0">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+android:background="@drawable/head_1"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="更改工作号"
+            android:paddingTop="12dp"
+            android:paddingLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView4" />
+
+        <ImageView
+            android:id="@+id/back_name"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/back_icon_black" />
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_icon"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/work_ok"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:background="@drawable/write_in"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="17dp"
+            android:textColor="#fff"
+            android:text="确认"
+            android:layout_alignBottom="@+id/back_name"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入工作号"
+            android:textColor="#8B8682"
+            android:textColorHint="#7f668B8B"
+            android:paddingTop="5dp"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/background_1"
+            android:id="@+id/edit_work"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每个人的工作号是唯一的哟。"
+        android:layout_marginLeft="25dp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

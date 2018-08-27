@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0f0"
+
+    >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.example.administrator.school_design.diy_item.MyScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backk_2"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="35dp"
+                    >
+                    <com.example.administrator.school_design.diy_item.CircleImg
+                        android:id="@+id/photo"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/head"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp">
+                        <TextView
+                            android:id="@+id/name_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="21dp"
+                            android:text="年糕"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:id="@+id/my_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:text="勿忘初心，珍惜现在"
+                            android:textColor="#000"
+
+                            android:layout_marginTop="10dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/sex_1"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/ic_sex_male" />
+                            <ImageView
+
+
+                                android:layout_width="50dp"
+                                android:layout_height="35dp"
+
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_constellation_10" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <com.example.administrator.school_design.diy_item.GifView
+                android:id="@+id/infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+
+                <View
+                    android:background="#ffeeeeee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip" />
+
+
+                <LinearLayout
+                    android:id="@+id/name_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/history_frame_1"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+
+                        android:text="名称"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="#6e6e6e"
+                        android:id="@+id/name"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:background="#ffeeeeee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip" />
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/history_frame_1"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/my_sign_1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+
+                        android:text="个性签名"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+
+                        />
+                    <TextView
+                        android:id="@+id/sign_shi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text="(未填写)"
+                        android:textColor="#6e6e6e"
+
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:background="#ffeeeeee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/history_frame_1"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+
+                        android:text="星座"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:text="(未选择)"
+                        android:textSize="16sp"
+                        android:textColor="#6e6e6e"
+
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:background="#ffeeeeee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip" />
+                <LinearLayout
+                    android:id="@+id/sex_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/history_frame_1"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:text="性别"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="#6e6e6e"
+                        android:id="@+id/sex"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:background="#ffeeeeee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip" />
+
+                <LinearLayout
+                    android:id="@+id/work_id_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/history_frame_1"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+
+                        android:text="工作号"
+                        android:layout_weight="0.01"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/work_id"
+                        android:textColor="#6e6e6e"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:background="#ffeeeeee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+
+                    />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.example.administrator.school_design.diy_item.MyScrollView>
+
+    <ImageView
+        android:id="@+id/back_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/opw"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>
+
+</LinearLayout>

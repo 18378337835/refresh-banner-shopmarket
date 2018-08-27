@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0f0">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+         android:background="@drawable/head_1"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="更改名字"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="14dp"
+            android:paddingLeft="35dp"
+
+
+            android:id="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/back_icon_black" />
+
+
+        <Button
+            android:id="@+id/name_ok"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:background="@drawable/write_in"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="14dp"
+            android:textColor="#fff"
+            android:text="确认"
+            android:layout_alignBottom="@+id/back_icon"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入名字"
+            android:textColor="#8B8682"
+            android:textColorHint="#7f668B8B"
+            android:paddingTop="5dp"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/background_1"
+            android:id="@+id/edit_name_1"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好的名字可以让你的朋友更容易记住你。"
+        android:layout_marginLeft="25dp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+>
+    <com.example.administrator.school_design.activity.SwipeMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/buying_pic1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/app_name"
+                tools:background="#fff0f0f0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center">
+                <TextView style="@style/AppTheme.Label.Title"
+                    android:id="@+id/buying_title1"
+                    android:minWidth="200dp"
+                    android:layout_marginTop="5dp"
+                    tools:background="#fff0f0f0"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="单价："
+                                android:textColor="#808080"/>
+                            <TextView style="@style/AppTheme.Label"
+                                android:id="@+id/buying_tip1"
+                                android:textColor="@android:color/holo_orange_dark"
+                                android:text="59"
+                                tools:background="#fff0f0f0"/>
+                            <TextView
+                                android:id="@+id/buying_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*2"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="总价:"
+                                android:textColor="#f29b05" />
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/money1"/>
+                            <TextView style="@style/AppTheme.Label"
+                                android:id="@+id/buying_price1"
+                                android:minWidth="50dp"
+                                android:textColor="#f73535"
+                                tools:background="#fff0f0f0"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#808080"
+                            android:text="购物状态"/>
+                        <TextView
+                            android:id="@+id/buying_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#078ae7"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnTop"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#d9dee4"
+            android:text="置顶"
+            android:textColor="@android:color/white"/>
+
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#fa5050"
+            android:text="删除"
+            android:textColor="@android:color/white"/>
+    </com.example.administrator.school_design.activity.SwipeMenuView>
+
+
+</LinearLayout>

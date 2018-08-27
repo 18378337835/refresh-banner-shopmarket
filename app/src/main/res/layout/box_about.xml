@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <include layout="@layout/layout_title"/>
+
+   <com.example.administrator.school_design.diy_item.MyScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            />
+
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+            <com.example.administrator.school_design.diy_item.GifView
+                   android:id="@+id/gif"
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   />
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:orientation="vertical">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="智能快递箱"
+                      android:textSize="30dp"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginBottom="5dp"
+                      android:textColor="#676b6c"
+                      android:gravity="center"/>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="开发人：黄佳年"
+                      android:textSize="16dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="10dp"
+                      android:textColor="#666666"
+                      android:gravity="center"/>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:text="    开发背景：近年来，随着电子商务的迅猛发展，快递业务呈高速增长趋势，快递包裹越来越多，但快递的“最后一公里”投递问题却成为快递发展的瓶颈，因此，在许多快递点都投放了智能快递箱，它将快件暂时保存在投递箱内，这种服务模式较好地满足了用户随时取件的需要，受到快递企业和用户的欢迎，为解决快递“最后一公里”问题提供了有效的解决方案，然而对于个体用户，仍然存在问题，由于上班或其他原因，上门寄件和收件成为空谈，只能花费大量时间去快递点排队寄件和取件，因此构建一个专为个体用户服务的寄件和取件的智能快递系统迫在眉睫。
+"
+                      android:textSize="18dp"
+                      android:textColor="#717171" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="18dp"
+                      android:textColor="#717171"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:text="    软件详情：本软件是一个基于物联网的，能够将物品（快件）进行暂存、远程管理的设备，它可以与云服务器一起构成智能快递箱系统。手机app和智能快递箱通过网络连接云服务器，通过实时通讯实现对快递箱的开启与关闭，此外，也可通过蓝牙对智能快递箱进行相应的操作。
+  "/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="18dp"
+                      android:textColor="#717171"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginBottom="40dp"
+                      android:text="    在此基础上，手机app加入各式动态效果，提高用户体验感，支持注册，登陆，签到，个人信息修改等一系列功能，加入了小型商城，这也使用户享受更加便捷的服务。"
+                      />
+               </LinearLayout>
+
+            </LinearLayout>
+
+      </LinearLayout>
+   </com.example.administrator.school_design.diy_item.MyScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@android:color/white"
+        app:srlAccentColor="@android:color/white"
+        app:srlDragRate="0.7"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="false"
+        app:srlHeaderMaxDragRate="1.3"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="20dp"
+            app:srlDrawableMarginRight="20dp"
+            app:srlDrawableProgress="@drawable/ic_progress_hojder"
+            app:srlDrawableProgressSize="20dp"
+            app:srlEnableLastTime="true"
+            app:srlFinishDuration="500"
+            app:srlTextSizeTime="10dp"
+            app:srlTextSizeTitle="16sp"
+            app:srlTextTimeMarginTop="2dp" />
+
+        <com.example.administrator.school_design.scrol_title.ScrollViewContainer
+            android:id="@+id/sv_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <include layout="@layout/thing_top"/>
+            <include layout="@layout/thing_bottom"/>
+        </com.example.administrator.school_design.scrol_title.ScrollViewContainer>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <RelativeLayout
+        android:id="@+id/shop_title"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_shop_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:text="商品详情"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="100dp"
+            android:paddingTop="14dp"
+            android:textColor="#0000"
+            android:paddingLeft="35dp"
+            android:textStyle="bold"
+
+
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/shop_back"
+            android:layout_marginTop="39dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/opw"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/backgroud_6"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_alignParentBottom ="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp">
+
+    <Button
+        android:id="@+id/shop_gou"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="购物车"
+
+        android:layout_marginRight="25dp"
+        android:background="@drawable/scan_button"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        />
+    <com.mcxtzhang.lib.AnimShopButton
+        android:id="@+id/btnEle"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:addEnableBgColor="#f94c46"
+        app:addEnableFgColor="#ffffff"
+        app:hintBgColor="#f94c46"
+        app:hintBgRoundValue="15dp"
+        app:hintFgColor="#ffffff"
+       android:layout_gravity="center"
+        app:maxCount="100"
+        />
+    <Button
+        android:id="@+id/shop_car"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="购买"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/scan_button"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+</RelativeLayout>

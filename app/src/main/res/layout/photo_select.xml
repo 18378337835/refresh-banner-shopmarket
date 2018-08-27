@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:layout_gravity="center"
+    android:background="#66000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background_2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="17sp"
+            android:text="选择图片来源"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/background_5"
+            android:textColor="#8c8c8c" />
+
+        <TextView
+            android:id="@+id/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:background="@drawable/history_frame_1"
+            android:textColor="#ef9d1a"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2e2e2"/>
+        <TextView
+            android:id="@+id/select_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从相册选取"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/history_ok_back"
+            android:padding="20dp"
+
+            android:textColor="#239cec"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_2">
+        <TextView
+            android:id="@+id/select_photo_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/select_cancel"
+            android:padding="20dp"
+
+            android:textColor="#636363"/>
+
+     </LinearLayout>
+
+</LinearLayout>

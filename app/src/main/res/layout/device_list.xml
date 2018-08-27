@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="70dp"
+    android:background="@drawable/background_2"
+    >
+
+    <TextView
+        android:id="@+id/title_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已配对设备"
+        android:visibility="gone"
+        android:background="#baffaa00"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        />
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:background="#969490"
+          />
+
+    <!--<TextView-->
+        <!--android:id="@+id/title_zhuanyong_devices"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="测试专用设备"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="#90ca8f18"-->
+        <!--android:textColor="#fff"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--/>-->
+    <!--<ListView-->
+        <!--android:id="@+id/zhuanyong_devices"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:stackFromBottom="true"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="#969490"-->
+        <!--/>-->
+    <TextView
+        android:id="@+id/title_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其他设备"
+
+        android:background="#baffaa00"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+        />
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:background="#969490"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>

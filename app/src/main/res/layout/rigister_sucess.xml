@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+android:layout_gravity="center"
+    android:background="@drawable/background_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+   >
+   <TextView
+            android:gravity="center"
+       android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="恭喜你注册成功"
+            android:background="#ffffff"
+            android:textSize="20dp"
+
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/right_1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1dede"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="退出程序"
+                    android:background="@drawable/rigister_button_left"
+                    android:textSize="17dp"
+
+                    android:textColor="#000000"
+                    android:id="@+id/rigister_exit"
+
+                    android:gravity="center"
+
+                    />
+            </LinearLayout>
+
+<TextView
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="#e4e1e1"
+    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+               >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="现在登录>>"
+                    android:textSize="17dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#45c0e6"
+                    android:background="@drawable/rigister_button_right"
+                    android:id="@+id/login_2"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

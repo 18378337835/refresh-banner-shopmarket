@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:background="#dfdfdf"
+        android:layout_gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="235dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_4">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/search"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="搜索记录"
+                android:textColor="#8B8682"
+                android:textColorHint="#7f668B8B"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/background_4"
+                android:id="@+id/edit_name"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="查询记录"
+            android:background="@drawable/write_in"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:layout_gravity="center"
+
+            />
+
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:srlDragRate="0.7"
+        app:srlHeaderMaxDragRate="1.3"
+        app:srlPrimaryColor="@color/colorPrimary"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="false">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlFinishDuration="500"
+            app:srlEnableLastTime="true"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlTextSizeTitle="16sp"
+            app:srlTextSizeTime="10dp"
+            app:srlTextTimeMarginTop="2dp"
+            app:srlDrawableArrowSize="20dp"
+            app:srlDrawableProgressSize="20dp"
+            app:srlDrawableMarginRight="20dp"
+            app:srlDrawableProgress="@drawable/ic_progress_hojder"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               >
+
+
+
+                <com.example.administrator.school_design.loopview.why168.LoopViewPagerLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mLoopViewPagerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/backgroud_6"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/first_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/write_1"/>
+        <TextView
+            android:id="@+id/first_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/write_3"/>
+        <TextView
+            android:id="@+id/second_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/third_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/write_5"/>
+        <TextView
+            android:id="@+id/third_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+      />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/four_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/write_6"/>
+        <TextView
+            android:id="@+id/four_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/write_list"
+                    android:transcriptMode="normal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:listSelector="#00000000"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <!--<com.scwang.smartrefresh.layout.footer.ClassicsFooter-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srlFinishDuration="500"-->
+            <!--app:srlClassicsSpinnerStyle="Translate"/>-->
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">家    箱</string>
+    <string name="scanning">正在搜索设备...</string>
+    <string name="none_paired">没有已配对的设备</string>
+    <string name="none_found">未发现设备</string>
+    <string name="select_device">选择一个设备连接</string>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.school_design.diy_item.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/text"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家 箱"
+                    android:textSize="20dp"
+                    android:layout_marginTop="9dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The smart box around you"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"/>
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="致力于打造更好的用户体验"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textColor="#000000"/>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_1">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/user"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="账号"
+                    android:textColor="#8B8682"
+                    android:textColorHint="#7f668B8B"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_1"
+                    android:id="@+id/edit_name"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_1">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/password"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="密码"
+                    android:textColor="#8B8682"
+                    android:textColorHint="#7f668B8B"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_1"
+                    android:id="@+id/edit_password"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remember"
+                android:layout_marginTop="10dp"
+                android:text="记住密码"
+                android:checked="true"
+                android:textColor="#668B8B"
+                style="@style/checkboxsy"
+                android:padding="5dp"
+                android:layout_marginLeft="30dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="登陆"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:background="@drawable/login_back"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/login"
+                android:layout_marginTop="10dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="还没有账号？"
+                    android:textSize="15sp"/>
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:text="现在注册"
+                    android:background="@drawable/rigister_back"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#028dce"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Box"
+                android:textColor="#0d8bdf"
+                android:textSize="11dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.3.9"
+                android:textSize="11dp"
+                android:textColor="#919191"
+                android:layout_marginLeft="5dp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.example.administrator.school_design.diy_item.MyScrollView>

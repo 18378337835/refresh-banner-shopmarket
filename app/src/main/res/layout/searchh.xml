@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background_5"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="搜索结果"
+            android:textColor="#8c8c8c"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/search_back"
+            android:layout_width="25dp"
+
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back_icon_black" />
+    </RelativeLayout>
+    <com.example.administrator.school_design.diy_item.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/search_list"
+
+                android:transcriptMode="normal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:listSelector="#00000000"
+                />
+        </LinearLayout>
+
+
+
+    </com.example.administrator.school_design.diy_item.MyScrollView>
+
+
+
+</LinearLayout>

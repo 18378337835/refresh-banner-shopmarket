@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="5dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/lmi_pic"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center"
+        tools:background="#fff0f0f0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+       android:layout_gravity="center">
+        <TextView style="@style/AppTheme.Label.Title"
+            android:id="@+id/lmi_title"
+            android:minWidth="200dp"
+            android:layout_marginTop="5dp"
+            tools:background="#fff0f0f0"/>
+        <TextView style="@style/AppTheme.Label"
+            android:id="@+id/lmi_tip"
+            android:minWidth="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_orange_dark"
+            tools:background="#fff0f0f0"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:background="@drawable/money1"/>
+            <TextView style="@style/AppTheme.Label"
+                android:id="@+id/lmi_price"
+                android:minWidth="100dp"
+                android:textSize="16dp"
+android:layout_marginTop="3dp"
+                android:textColor="#f73535"
+                tools:background="#fff0f0f0"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+ >
+    <TextView style="@style/AppTheme.Label"
+        android:id="@+id/lmi_address"
+        android:minWidth="100dp"
+        android:textColor="#afafaf"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        tools:background="#fff0f0f0"/>
+
+</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

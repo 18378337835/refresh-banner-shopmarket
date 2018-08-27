@@ -1,0 +1,142 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--  记忆密码的正方形框-->
+    <style name="checkboxsy" parent="Theme.AppCompat">
+        <item name="android:button">@drawable/checkboxsytle</item>
+    </style>
+
+    <!--  购物车checkbox-->
+    <style name="checkbox_car" parent="Theme.AppCompat">
+        <item name="android:button">@drawable/shop_check</item>
+    </style>
+
+    <style name="AppTheme.Label.Title">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="AppTheme.Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#444444</item>
+    </style>
+    <!--   弹出窗口的style-->
+    <style name="DialogStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowAnimationStyle">@style/AnimationPreview</item>
+    </style>
+    <style name="DialogStyle1" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowAnimationStyle">@style/AnimationPreview1</item>
+    </style>
+
+    <!--右滑后退必须写上的style，设置滑动透明和无黑影-->
+    <style name="back1" parent="@android:style/Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <!--定义gif的style，因为架包需要这个，可自行填充，这里未填-->
+    <style name="Widget_GifView">
+
+    </style>
+
+
+    <!--弹窗过渡动画-->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/popw</item >
+        <item name="android:windowExitAnimation">@anim/popw3</item>
+    </style>
+    <!--弹窗过渡动画-->
+    <style name="AnimationPreview1">
+        <!--<item name="android:windowEnterAnimation">@anim/popw</item>-->
+        <item name="android:windowEnterAnimation">@anim/popw4</item >
+        <!--<item name="android:windowExitAnimation">@anim/popw3</item>-->
+    </style>
+
+
+
+    <!-- 之后的为自定义样式，在app中未使用 -->
+    <style name="txt_ContextStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="img_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/app_name</item>
+    </style>
+
+    <style name="TxtTitle" parent="@style/img_Style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="contextMenuAnim" >
+        <item name="android:windowEnterAnimation">@anim/context_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/context_menu_exit</item>
+    </style>
+
+    <style name="history_more" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/hisory_more_1</item>
+        <item name="android:windowExitAnimation">@anim/history_more_2</item>
+    </style>
+
+    <style name="history_more1" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/payanim1</item>
+        <item name="android:windowExitAnimation">@anim/payanim2</item>
+    </style>
+
+    <style name="blackTextStyleSmall">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="greyTextStyleSmaller">
+        <item name="android:textSize">@dimen/font_smaller</item>
+        <item name="android:textColor">@color/grey_text_color_normal</item>
+    </style>
+    <style name="whiteTextStyle">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="blackTextStyle">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="colorPrimaryTextStyleSmall">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="colorPrimaryTextStyle">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="greyTextStyleSmall">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">@color/grey_text_color_normal</item>
+    </style>
+
+</resources>

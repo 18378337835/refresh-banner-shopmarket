@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf8f8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:background="@drawable/head_1"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="5dp"
+            android:text="我的订单"
+            android:paddingTop="15dp"
+            android:paddingLeft="41dp"
+
+
+            android:id="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/ord_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:background="@drawable/back_icon_black" />
+
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:srlDragRate="0.7"
+        app:srlHeaderMaxDragRate="1.3"
+        app:srlPrimaryColor="@color/colorPrimary"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="false">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlFinishDuration="500"
+            app:srlEnableLastTime="true"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlTextSizeTitle="16sp"
+            app:srlTextSizeTime="10dp"
+            app:srlTextTimeMarginTop="2dp"
+            app:srlDrawableArrowSize="20dp"
+            app:srlDrawableProgressSize="20dp"
+            app:srlDrawableMarginRight="20dp"
+            app:srlDrawableProgress="@drawable/ic_progress_hojder"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll_2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="已下单"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:background="#f5a38c"
+                    android:layout_marginBottom="10dp"
+                   />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="#00000000"
+
+                    android:id="@+id/buying"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="已购买"
+
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:background="#5bbfed"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="#00000000"
+
+                    android:id="@+id/bought"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

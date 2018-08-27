@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+  >
+
+<LinearLayout
+    android:layout_width="145dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/acc">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/about"
+
+            android:gravity="center"
+            android:background="@drawable/history_frame_1">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+           android:layout_marginRight="15dp"
+                android:background="@drawable/about"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于"
+                android:paddingRight="28dp"
+                android:textColor="#333333"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d9d6d6"/>
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/exit"
+            android:background="@drawable/history_frame_1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/exit"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出"
+                android:textColor="#333333"
+                android:paddingRight="28dp"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f7f7"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:background="#dfdfdf"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        >
+
+
+        <LinearLayout
+            android:layout_width="235dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_4">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/search"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="搜索记录"
+                android:textColor="#8B8682"
+                android:textColorHint="#7f668B8B"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/background_4"
+                android:id="@+id/edit_name"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="查询记录"
+            android:background="@drawable/write_in"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:layout_gravity="center"
+
+            />
+
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.11"
+        android:background="@android:color/white"
+        app:srlDragRate="0.7"
+        android:layout_marginTop="3dp"
+        app:srlHeaderMaxDragRate="1.3"
+        app:srlPrimaryColor="@color/colorPrimary"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="false">
+        <com.scwang.smartrefresh.header.DropboxHeader
+            android:layout_width="match_parent"
+            android:layout_height="90dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1dp"
+                    android:id="@+id/list_history"
+                    android:focusable="false"
+
+                    android:listSelector="#00000000"  />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:id="@+id/history_kong"
+                    android:orientation="vertical"
+                  android:layout_marginTop="140dp"
+                    android:layout_marginBottom="30dp">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/kong_2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="空空的感觉"
+                        android:textSize="20dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#7b7b7b"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#ececec"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="已选择："
+            android:layout_marginLeft="15dp"
+            android:textColor="#515151"
+            />
+        <TextView
+            android:id="@+id/check_nm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="20dp"
+            android:textColor="#706f6f"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#545454"
+            android:textSize="16dp"
+            android:layout_marginLeft="50dp"
+            android:text="合计:"/>
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="#f95a5a"
+            android:textSize="16dp"
+           android:gravity="center"
+            android:text="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f95a5a"
+            android:textSize="16dp"
+            android:text="元"/>
+        <Button
+            android:id="@+id/shop_car_pay"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="结算"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/write_in"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:layout_gravity="center"
+
+            />
+    </LinearLayout>
+        </LinearLayout>
+
+

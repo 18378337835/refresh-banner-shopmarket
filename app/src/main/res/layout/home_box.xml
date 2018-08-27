@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.school_design.view.my_scroll.PullToRefresh0
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+<include layout="@layout/refresh_head"/>
+
+
+    <com.example.administrator.school_design.view.my_scroll.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:id="@+id/is_internet"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/is_connnect"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/remind" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网络连接未响应"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/other_way">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/mor1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有网络？"
+        android:textColor="#646464" />
+</LinearLayout>
+
+            </LinearLayout>
+
+
+              <TextView
+                  android:id="@+id/mtitle_state"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                  android:layout_marginTop="10dp"
+                  android:textColor="#646464" />
+
+            <LinearLayout
+                android:id="@+id/oth_viw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tongbu"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+                    android:text="查看实时监控"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#696969"/>
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+android:visibility="gone"
+  >
+    <TextView
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="0.3"
+        android:hint="输入"
+        android:textSize="15dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_out"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_weight="0.3"
+        android:textSize="15dp"
+        android:hint="发送区"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+    android:id="@+id/button_send"
+    android:layout_width="71dp"
+    android:layout_marginRight="2dp"
+    android:layout_height="wrap_content"
+    android:text="发送"
+    android:textSize="15dp"
+    android:layout_marginLeft="45dp"
+    android:layout_marginTop="8dp"
+    android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/onenet_out"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="0.3"
+        android:hint="输入"
+        android:textSize="15dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <Button
+        android:id="@+id/onenet_test"
+        android:layout_width="71dp"
+        android:layout_marginRight="2dp"
+        android:layout_height="wrap_content"
+        android:text="测试联网"
+        android:textSize="15dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"/>
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="65dp"
+                android:layout_weight="0.1"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/box_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:clickable="true"
+                    android:longClickable="true"
+                  />
+
+                <ImageView
+                    android:id="@+id/box_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="30dp"
+                    android:clickable="true"
+                    android:longClickable="true"
+                />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="1dp"
+                        android:background="#000000"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="欢迎使用你的家箱"
+                        android:textColor="#767474"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000000"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.example.administrator.school_design.view.my_scroll.PullableScrollView>
+    <include layout="@layout/load_more" />
+</com.example.administrator.school_design.view.my_scroll.PullToRefresh0>
+
+

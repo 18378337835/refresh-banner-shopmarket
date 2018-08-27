@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.school_design">
+
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".onenet_init"
+        android:allowBackup="true"
+        android:icon="@drawable/text"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light">
+        <!-- OneNET product api-key -->
+        <meta-data
+            android:name="com.chinamobile.iot.onenet.APP-KEY"
+            android:value="Your OneNET product api-key here"/>
+
+        <!-- OneNET server host -->
+        <meta-data
+            android:name="com.chinamobile.iot.onenet.HOST"
+            android:value="api.heclouds.com"/>
+
+        <activity android:name=".login.welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".login.rigister"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@android:style/Theme.Light"/>
+        <activity
+            android:name=".login.box_login"
+            android:theme="@android:style/Theme.Light"
+            android:windowSoftInputMode="adjustPan"/>
+        />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.Light"
+            android:windowSoftInputMode="adjustUnspecified"/>
+        />
+
+        <activity
+            android:name=".login.rigister_sucess"
+            android:theme="@style/DialogStyle1"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".login.rigister_fail"
+            android:theme="@style/DialogStyle1"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".box_about"
+            android:theme="@android:style/Theme.Light"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".view.item_view.person_profile"
+            android:theme="@style/back1"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".view.item_view.change_name"
+            android:theme="@style/back1"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".view.item_view.change_workid"
+            android:theme="@style/back1"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".view.item_view.thing_content"
+            android:theme="@android:style/Theme.Light"
+            android:windowSoftInputMode="adjustUnspecified"
+            />
+        <activity
+            android:name=".view.item_view.shop_list"
+            android:theme="@android:style/Theme.Light"
+            android:windowSoftInputMode="adjustUnspecified"
+            />
+        <activity
+            android:name=".view.item_view.change_sign"
+            android:theme="@style/back1"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".view.item_view.password_setting"
+            android:theme="@style/back1"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".view.item_view.sex_select"
+            android:theme="@style/DialogStyle"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".activity.DeviceListActivity"
+            android:theme="@style/DialogStyle1"
+            android:windowSoftInputMode="adjustPan"
+            />
+
+        <activity
+            android:name=".view.item_view.my_ord"
+            android:theme="@style/back1"
+            android:windowSoftInputMode="adjustNothing|stateUnchanged"/>
+        />
+    </application>
+
+</manifest>

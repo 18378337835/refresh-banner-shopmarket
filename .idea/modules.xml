@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Recyclerview/Recyclerview.iml" filepath="$PROJECT_DIR$/Recyclerview/Recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/onenet-sdk/onenet-sdk.iml" filepath="$PROJECT_DIR$/onenet-sdk/onenet-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-footer/refresh-footer.iml" filepath="$PROJECT_DIR$/refresh-footer/refresh-footer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-header/refresh-header.iml" filepath="$PROJECT_DIR$/refresh-header/refresh-header.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-layout/refresh-layout.iml" filepath="$PROJECT_DIR$/refresh-layout/refresh-layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/school-design.iml" filepath="$PROJECT_DIR$/school-design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_car/shop_car.iml" filepath="$PROJECT_DIR$/shop_car/shop_car.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipebackhelper/swipebackhelper.iml" filepath="$PROJECT_DIR$/swipebackhelper/swipebackhelper.iml" />
+    </modules>
+  </component>
+</project>

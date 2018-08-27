@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="确认订单"
+            android:padding="12dp"
+            android:gravity="center"
+            android:background="@drawable/background_5"
+            android:textColor="#8c8c8c"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/address_add_back"
+            android:layout_width="25dp"
+
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back_icon_black" />
+
+    </RelativeLayout>
+    <com.example.administrator.school_design.diy_item.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="收件姓名："/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#8B8682"
+                    android:textColorHint="#7f668B8B"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_1"
+                    android:id="@+id/edit_named"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:text="收件电话："/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#8B8682"
+                    android:textColorHint="#7f668B8B"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_1"
+                    android:id="@+id/edit_phone"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:text="收件地址："/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="例如：广西桂林秀峰区xx号"
+                    android:textColor="#8B8682"
+                    android:textColorHint="#7f668B8B"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="@drawable/background_1"
+                    android:id="@+id/edit_address"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="20dp"
+                android:text="货到付款"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:background="@drawable/address_save"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/save_address"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </com.example.administrator.school_design.diy_item.MyScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.school_design.MainActivity">
+
+    <include  android:id="@+id/layout_bar"
+        layout="@layout/layout_title"/>
+
+
+    <com.example.administrator.school_design.activity.fragment_new
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1" >
+    </com.example.administrator.school_design.activity.fragment_new>
+
+    <include layout="@layout/layout_bottom"/>
+
+</LinearLayout>
